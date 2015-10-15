@@ -1,0 +1,9 @@
+{
+	"files": [
+		"ASDataView.ts"
+	],
+	"compilerOptions": {
+		"target": "ES5",
+		"module": "commonjs"
+	}
+}
