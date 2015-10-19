@@ -66,6 +66,24 @@ class ASReader {
 			return String.fromCharCode(this._data.getInt8(offset));
 		}, 1);
 	}
+	
+	/**
+	 * @param repeat {number} number of strings to retrieve
+	 * @description C string is terminated with '\0' at the end
+	 * @return array of string(s) 
+	 */
+	public getCStr(repeat: number = 1): Array<string> {
+		let ret: Array<string> = [];
+		
+		for(let i: number = 0; i < repeat; i++){
+			let result: string = "";
+			while((String.fromCharCode(this._data.getInt8(this.offset))) !== '\0'){
+				ret.push(result);
+			}
+		}
+		
+		return ret;
+	}
 
 	/**
 	* @param repeat number {number} of str16(s) to retrieve

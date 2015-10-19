@@ -20,9 +20,11 @@ ASDataView helps with reading/writing binary files in Javascript. It's written i
 
 **Float64**
 
-**String16** C-like string
+**CString** C String terminated with '/0' char
 
-**String32** C-like string
+**String16** C++ like string
+
+**String32** C++ like string
 
 **Zip** you need [pako](http://nodeca.github.io/pako/)
 
