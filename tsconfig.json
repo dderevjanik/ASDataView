@@ -1,9 +1,13 @@
 {
-	"files": [
-		"ASDataView.ts"
-	],
-	"compilerOptions": {
-		"target": "ES5",
-		"module": "commonjs"
-	}
+  "compilerOptions": {
+    "declaration": true,
+    "target": "es5",
+    "module": "amd",
+    "outDir": "./dist/",
+    "noImplicitAny": false,
+    "noLib": false
+  },
+  "files": [
+    "src/index.ts"
+  ]
 }

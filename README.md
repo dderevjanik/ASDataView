@@ -1,8 +1,11 @@
-# ASDataView
+# ASData
 
-ASDataView helps with reading/writing binary files in Javascript. It's written in typescript.
+ASData helps with reading/writing binary files in Javascript.
+It's written in typescript.
 
 ## Supported Data Types
+
+**Char** ASCII char
 
 **Int8**
 
@@ -28,10 +31,21 @@ ASDataView helps with reading/writing binary files in Javascript. It's written i
 
 **Zip** you need [pako](http://nodeca.github.io/pako/)
 
+## Methods
+
+**inflate** unzip all data from current offset
+
+**slice** return new ASData from sliced data
+
+**skip** will skip number of bytes
+
+**getOffset** get current offset
+
+**setOffset** set offset
+
 ## Example
 
-```tsc
-var reader = ASReader(arrayBuffer); 
-reader.getInt8(); // return Int8 and move offest about 1 bytes forward
+```js
+var data = ASData(arrayBuffer);
+data.getUint16(); // return unsigned int16 (short) and moves offset about 2 bytes forward
 ```
-

@@ -1,0 +1,16 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "description": "asdata",
+  "main": "dist/index.js",
+  "typings": "dist/index",
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "author": "Daniel Derevjanik",
+  "license": "MIT",
+  "repository": {
+      "type": "git",
+      "url": ""
+  }
+}
