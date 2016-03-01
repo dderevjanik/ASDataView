@@ -9,8 +9,9 @@
   },
   "author": "Daniel Derevjanik",
   "license": "MIT",
+  "homepage": "https://github.com/dderevjanik/asdata",
   "repository": {
       "type": "git",
-      "url": ""
+      "url": "git+https://github.com/dderevjanik/asdata"
   }
 }
