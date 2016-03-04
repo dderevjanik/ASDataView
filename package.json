@@ -1,17 +1,20 @@
 {
   "name": "asdata",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "asdata",
   "main": "dist/index.js",
   "typings": "dist/index",
   "scripts": {
-    "prepublish": "tsc"
+    "build": "tsc"
   },
   "author": "Daniel Derevjanik",
   "license": "MIT",
   "homepage": "https://github.com/dderevjanik/asdata",
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/dderevjanik/asdata"
+    "type": "git",
+    "url": "git+https://github.com/dderevjanik/asdata"
+  },
+  "dependencies": {
+    "pako": "^1.0.0"
   }
 }

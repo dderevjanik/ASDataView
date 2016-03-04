@@ -1,4 +1,6 @@
-declare var pako: any; // support for Pako library
+/// <reference path="../typings/pako/pako.d.ts"/>
+
+import * as pako from 'pako';
 
 declare type dataViewFnc = (offset: number) => any;
 
