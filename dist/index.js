@@ -1,4 +1,6 @@
+/// <reference path="../typings/pako/pako.d.ts"/>
 "use strict";
+var pako = require('pako');
 /**
  * AgeScx Data view
  * supports reading and writing primitive types

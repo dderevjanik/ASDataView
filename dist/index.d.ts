@@ -1,3 +1,4 @@
+/// <reference path="../typings/pako/pako.d.ts" />
 /**
  * AgeScx Data view
  * supports reading and writing primitive types
