@@ -1,22 +1,22 @@
-/// <reference path="../typings/pako/pako.d.ts" />
 /**
  * AgeScx Data view
  * supports reading and writing primitive types
  * offset is automaticly moved forward about size of 'DataType'
  */
-export default class ASData {
+declare class ASData {
     private _offset;
     private _data;
+    private _read;
     /**
      * @param {ArrayBuffer} arrayBuffer - arrayBuffer from file
      * @param {number} offset - starting offset = 0
      */
-    constructor(arrayBuffer: ArrayBuffer, offset?: number);
+    constructor(buffer: ArrayBuffer | any, offset?: number);
     /**
      * will inflate dataview
      * @param {number} offset - from which offset
      */
-    inflate(offset?: number): void;
+    inflate(offset?: number): ASData;
     /**
      * Create new ASReader from sliced one
      * @param {number} start - starting offset
@@ -104,3 +104,4 @@ export default class ASData {
     getFloat64: () => number;
     private _getPrimitive;
 }
+export default ASData;

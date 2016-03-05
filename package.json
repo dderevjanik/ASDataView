@@ -1,11 +1,11 @@
 {
   "name": "asdata",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "asdata",
   "main": "dist/index.js",
   "typings": "dist/index",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && webpack --config webpack.web.config"
   },
   "author": "Daniel Derevjanik",
   "license": "MIT",
@@ -16,5 +16,8 @@
   },
   "dependencies": {
     "pako": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.14"
   }
 }

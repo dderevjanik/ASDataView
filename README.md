@@ -1,5 +1,7 @@
 # ASData
 
+![Travis](https://travis-ci.org/dderevjanik/asdata.svg?branch=master)
+
 ASData helps with reading/writing binary files in Javascript.
 It's written in typescript.
 
