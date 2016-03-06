@@ -98,7 +98,6 @@ var ASData = (function () {
         }
         else {
             // nodejs enviroment
-            console.log('nodeJS enviroment');
             this._data = buffer;
             this._read = bindZlibFnc(buffer);
         }
